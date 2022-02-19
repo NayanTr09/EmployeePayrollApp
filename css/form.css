@@ -45,8 +45,8 @@ body {
 }
 
 .form-content {
-    min-height: calc(100%-80px);
     background-color: #f7f7f7;
+    min-height: calc(100%-80px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +54,7 @@ body {
 }
 
 .form {
-    width: 65%;
+    width: 55%;
     padding: 44px 60px;
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
@@ -121,4 +121,13 @@ label {
     margin-left: 12px;
 }
 
-
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize:  vertical;
+    font:normal normal normal 16px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    background-color: transparent;
+}
