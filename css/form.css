@@ -1,4 +1,4 @@
-ody {
+body {
     margin: 0;
     height: 100%;
 }
@@ -161,4 +161,10 @@ label {
     text-decoration: none;
     background-color: #cfcece;
     text-align: center;
+}
+
+error-output {
+    font-size: 12px;
+    font-style: italic;
+    color: red;
 }
