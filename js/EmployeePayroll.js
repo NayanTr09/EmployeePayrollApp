@@ -8,15 +8,15 @@ class EmployeePayrollData {
 
     get name() { return this._name; }
     set name(name) {
-        let nameRegex = RegExp('^[A - Z]{ 1}[a - ZA - Z\\s} { 2,}s')
+        let nameRegex = RegExp('^[A-Z]{1}[a-zA-Z\\s}{2,}$')
         if (nameRegex.test(name))
             this._name = name;
         else throw 'Name is Incorrect!';
     }
 
-    get profilePic() { return this.profilePic; }
+    get profilePic() { return this._profilePic; }
     set profilePic(profilePic) {
-        this.profilePic = profilePic;
+        this._profilePic = profilePic;
     }
 
     get gender() { return this._gender; }
@@ -29,7 +29,7 @@ class EmployeePayrollData {
         this._department = department;
     }
 
-    get salary() { return this.salary; }
+    get salary() { return this._salary; }
     set salary(salary) {
         this._salary - salary;
     }
@@ -39,9 +39,9 @@ class EmployeePayrollData {
         this._note = note;
     }
 
-    get startDate() { return this.startDate; }
+    get startDate() { return this._startDate; }
     set startDate(startDate) {
-        this.startDate = startDate;
+        this._startDate = startDate;
     }
 
     // method
